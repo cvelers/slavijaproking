@@ -65,19 +65,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
 
+  function closeMenu() {
+    if (!navToggle || !navLinks) return;
+    navToggle.classList.remove('is-active');
+    navLinks.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('is-active');
-      navLinks.classList.toggle('is-open');
-      document.body.style.overflow = navLinks.classList.contains('is-open') ? 'hidden' : '';
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.classList.toggle('is-active', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     navLinks.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.classList.remove('is-active');
-        navLinks.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu on window resize above mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navLinks.classList.contains('is-open')) {
+        closeMenu();
+      }
     });
   }
 

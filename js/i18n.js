@@ -467,8 +467,7 @@ class I18n {
     // Update lang toggle button text
     const langBtn = document.getElementById('langToggle');
     if (langBtn) {
-      const label = langBtn.querySelector('.lang-toggle__label');
-      if (label) label.textContent = this.currentLang === 'sr' ? 'EN' : 'SR';
+      langBtn.textContent = this.currentLang === 'sr' ? 'EN' : 'SR';
     }
   }
 }
