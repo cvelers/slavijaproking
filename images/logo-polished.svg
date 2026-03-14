@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 718 520"
+     width="718"
+     height="520"
+     shape-rendering="geometricPrecision">
+  <defs>
+    <mask id="grey-cutouts" maskUnits="userSpaceOnUse">
+      <rect width="718" height="520" fill="#ffffff"/>
+      <path fill="#000000"
+            d="M190 219
+               V209
+               A17 17 0 0 1 192 196
+               L260 152
+               L302 127
+               L344 152
+               L417 203
+               H615
+               V219
+               Z"/>
+      <path fill="#000000"
+            d="M359 315
+               H590
+               C594 315 597 318 597 322
+               C597 326 594 329 590 329
+               H359
+               Z"/>
+    </mask>
+    <filter id="shadow-final" x="-12%" y="-12%" width="130%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="6.5" flood-color="#000000" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="1.1" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="grey-grid-final" width="46" height="46" patternUnits="userSpaceOnUse">
+      <rect width="46" height="46" fill="none"/>
+      <path d="M45.5 0V46 M0 45.5H46"
+            fill="none"
+            stroke="#ffffff"
+            stroke-opacity="0.275"
+            stroke-width="6.5"
+            shape-rendering="crispEdges"/>
+      <path d="M45 0V46 M0 45H46"
+            fill="none"
+            stroke="#000000"
+            stroke-opacity="0.045"
+            stroke-width="0.7"
+            shape-rendering="crispEdges"/>
+    </pattern>
+    <linearGradient id="grey-fill-final" x1="56" y1="56" x2="691" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#919191"/>
+      <stop offset="18%" stop-color="#707070"/>
+      <stop offset="54%" stop-color="#555555"/>
+      <stop offset="100%" stop-color="#3c3c3c"/>
+    </linearGradient>
+    <linearGradient id="grey-top-final" x1="0" y1="56" x2="0" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.24"/>
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+  <!-- GREY SYSTEM -->
+  <g filter="url(#shadow-final)">
+    <g mask="url(#grey-cutouts)">
+      <g fill="url(#grey-fill-final)">
+        <path d="M245 56
+                 V165
+                 L188 199
+                 C184 202 184 215 189 217
+                 H245
+                 V316
+                 H141
+                 C118 316 97 309 79 292
+                 C64 278 56 257 56 236
+                 V201
+                 C56 180 64 161 79 146
+                 C86 139 95 133 105 128
+                 Z"/>
+        <path d="M359 56
+                 V168
+                 L416 202
+                 H610
+                 Z"/>
+        <rect x="56" y="328" width="189" height="102"/>
+        <path d="M359 217
+                 H593
+                 C648 217 691 265 691 323
+                 C691 382 648 430 593 430
+                 H359
+                 Z"/>
+      </g>
+      <g fill="url(#grey-top-final)">
+        <path d="M245 56
+                 V165
+                 L188 199
+                 C184 202 184 215 189 217
+                 H245
+                 V316
+                 H141
+                 C118 316 97 309 79 292
+                 C64 278 56 257 56 236
+                 V201
+                 C56 180 64 161 79 146
+                 C86 139 95 133 105 128
+                 Z"/>
+        <path d="M359 56
+                 V168
+                 L416 202
+                 H610
+                 Z"/>
+        <rect x="56" y="328" width="189" height="102"/>
+        <path d="M359 217
+                 H593
+                 C648 217 691 265 691 323
+                 C691 382 648 430 593 430
+                 H359
+                 Z"/>
+      </g>
+      <g fill="url(#grey-grid-final)" opacity="0.62">
+        <path d="M245 56
+                 V165
+                 L188 199
+                 C184 202 184 215 189 217
+                 H245
+                 V316
+                 H141
+                 C118 316 97 309 79 292
+                 C64 278 56 257 56 236
+                 V201
+                 C56 180 64 161 79 146
+                 C86 139 95 133 105 128
+                 Z"/>
+        <path d="M359 56
+                 V168
+                 L416 202
+                 H610
+                 Z"/>
+        <rect x="56" y="328" width="189" height="102"/>
+        <path d="M359 217
+                 H593
+                 C648 217 691 265 691 323
+                 C691 382 648 430 593 430
+                 H359
+                 Z"/>
+      </g>
+    </g>
+    <!-- outer grey outlines -->
+    <g fill="none"
+       stroke="#2f2f2f"
+       stroke-width="4.35"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2">
+      <path d="M245 56
+               V165
+               L188 199
+               C184 202 184 215 189 217
+               H245
+               V316
+               H141
+               C118 316 97 309 79 292
+               C64 278 56 257 56 236
+               V201
+               C56 180 64 161 79 146
+               C86 139 95 133 105 128
+               Z"/>
+      <path d="M359 56
+               V165
+               L416 202
+               H610
+               Z"/>
+      <rect x="56" y="328" width="189" height="102"/>
+      <path d="M359 217
+               H593
+               C648 217 691 265 691 323
+               C691 382 648 430 593 430
+               H359"/>
+      <path d="M359 215 V317"/>
+      <path d="M359 327 V432"/>
+    </g>
+    <!-- slot outline -->
+    <g fill="none"
+       stroke="#2f2f2f"
+       stroke-width="4.35"
+       stroke-linejoin="round"
+       stroke-linecap="butt">
+      <path d="M359 315
+               H590
+               C594 315 597 318 597 322
+               C597 326 594 329 590 329
+               H359"/>
+    </g>
+  </g>
+  <!-- ORANGE SYSTEM -->
+  <g>
+    <path d="M255 500
+             V58
+             A47 19 0 0 1 349 58
+             V500
+             Z"
+          fill="#ef7a21"
+          stroke="#873400"
+          stroke-width="4.35"
+          stroke-linejoin="round"/>
+  </g>
+</svg>

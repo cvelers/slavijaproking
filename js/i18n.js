@@ -155,6 +155,56 @@ const translations = {
 
     // Reg number label
     'contact.reg': 'Matični broj',
+
+    // Map
+    'contact.map.notice': 'Mapa se učitava nakon pristanka. Podaci se prenose Google-u.',
+    'contact.map.load': 'Prikaži mapu',
+
+    // Cookie
+    'cookie.text': 'Ovaj sajt koristi kolačiće za osnovno funkcionisanje. <a href="privatnost.html">Politika privatnosti</a>',
+    'cookie.accept': 'Prihvatam',
+    'cookie.decline': 'Odbijam',
+
+    // Footer legal
+    'footer.ident': 'Identifikacija',
+    'footer.privacy': 'Politika privatnosti',
+
+    // Identifikacija page
+    'ident.breadcrumb': 'Identifikacija',
+    'ident.title': 'Identifikacioni <span class="text-accent">podaci</span>',
+    'ident.company': 'Naziv firme',
+    'ident.activity': 'Delatnost',
+    'ident.activity.desc': 'Projektovanje, nadzor, konsalting i izvođenje građevinskih radova',
+    'ident.address.label': 'Sedište',
+    'ident.country': 'Srbija',
+    'ident.reg': 'Matični broj',
+    'ident.director': 'Direktor',
+    'ident.phone': 'Telefon / Fax',
+
+    // Privacy page
+    'privacy.breadcrumb': 'Politika privatnosti',
+    'privacy.title': 'Politika <span class="text-accent">privatnosti</span>',
+    'privacy.updated': 'Poslednja izmena: mart 2026.',
+    'privacy.s1.title': '1. Opšte informacije',
+    'privacy.s1.text': 'Slavija PROKING d.o.o., Ul. Mihajla Bandura br. 15, 11080 Beograd — Zemun (u daljem tekstu: „mi") upravlja ovim veb sajtom. Zaštita vaših ličnih podataka nam je veoma važna.',
+    'privacy.s2.title': '2. Hosting',
+    'privacy.s2.text': 'Ovaj sajt je hostovan na GitHub Pages. Prilikom posete sajtu, GitHub može prikupljati tehničke podatke kao što su IP adresa, tip pretraživača i vreme pristupa.',
+    'privacy.s3.title': '3. Kolačići i lokalno skladištenje',
+    'privacy.s3.text': 'Ovaj sajt ne koristi kolačiće trećih strana niti alate za praćenje. Koristimo isključivo localStorage u vašem pretraživaču za čuvanje:',
+    'privacy.s3.item1': 'Izbor teme (svetla/tamna) — ključ: sp-theme',
+    'privacy.s3.item2': 'Izbor jezika (SR/EN) — ključ: sp-lang',
+    'privacy.s3.item3': 'Status pristanka na kolačiće — ključ: sp-cookie-consent',
+    'privacy.s3.note': 'Ovi podaci se čuvaju samo lokalno u vašem pretraživaču i ne šalju se na naše servere.',
+    'privacy.s4.title': '4. Google Maps',
+    'privacy.s4.text': 'Na stranici Kontakt koristimo ugrađenu Google Maps mapu. Mapa se učitava tek nakon vašeg eksplicitnog pristanka.',
+    'privacy.s5.title': '5. Google Fonts',
+    'privacy.s5.text': 'Ovaj sajt koristi fontove iz servisa Google Fonts. Prilikom učitavanja stranice, vaš pretraživač uspostavlja vezu sa Google serverima.',
+    'privacy.s6.title': '6. Kontakt forma',
+    'privacy.s6.text': 'Kontakt forma na sajtu koristi mailto link za slanje poruke putem vašeg email klijenta. Podaci se ne čuvaju na serveru.',
+    'privacy.s7.title': '7. Vaša prava',
+    'privacy.s7.text': 'Imate pravo na pristup, ispravku i brisanje vaših ličnih podataka. Za sva pitanja kontaktirajte nas na: office@slavijaproking.rs',
+    'privacy.s8.title': '8. Kontakt',
+    'privacy.s8.phone': 'Telefon: +381 11 405 94 56',
   },
 
   en: {
@@ -309,6 +359,56 @@ const translations = {
 
     // Reg number label
     'contact.reg': 'Reg. number',
+
+    // Map
+    'contact.map.notice': 'The map loads after consent. Data is transmitted to Google.',
+    'contact.map.load': 'Show map',
+
+    // Cookie
+    'cookie.text': 'This site uses cookies for basic functionality. <a href="privatnost.html">Privacy policy</a>',
+    'cookie.accept': 'Accept',
+    'cookie.decline': 'Decline',
+
+    // Footer legal
+    'footer.ident': 'Company info',
+    'footer.privacy': 'Privacy policy',
+
+    // Identifikacija page
+    'ident.breadcrumb': 'Company info',
+    'ident.title': 'Company <span class="text-accent">information</span>',
+    'ident.company': 'Company name',
+    'ident.activity': 'Activity',
+    'ident.activity.desc': 'Design, supervision, consulting and construction works',
+    'ident.address.label': 'Headquarters',
+    'ident.country': 'Serbia',
+    'ident.reg': 'Registration no.',
+    'ident.director': 'Director',
+    'ident.phone': 'Phone / Fax',
+
+    // Privacy page
+    'privacy.breadcrumb': 'Privacy policy',
+    'privacy.title': 'Privacy <span class="text-accent">policy</span>',
+    'privacy.updated': 'Last updated: March 2026.',
+    'privacy.s1.title': '1. General information',
+    'privacy.s1.text': 'Slavija PROKING d.o.o., Ul. Mihajla Bandura br. 15, 11080 Belgrade — Zemun ("we") operates this website. The protection of your personal data is very important to us.',
+    'privacy.s2.title': '2. Hosting',
+    'privacy.s2.text': 'This site is hosted on GitHub Pages. When visiting the site, GitHub may collect technical data such as IP address, browser type, and access time.',
+    'privacy.s3.title': '3. Cookies and local storage',
+    'privacy.s3.text': 'This site does not use third-party cookies or tracking tools. We only use localStorage in your browser to save:',
+    'privacy.s3.item1': 'Theme preference (light/dark) — key: sp-theme',
+    'privacy.s3.item2': 'Language preference (SR/EN) — key: sp-lang',
+    'privacy.s3.item3': 'Cookie consent status — key: sp-cookie-consent',
+    'privacy.s3.note': 'This data is stored locally in your browser only and is not sent to our servers.',
+    'privacy.s4.title': '4. Google Maps',
+    'privacy.s4.text': 'On the Contact page we use an embedded Google Maps map. The map loads only after your explicit consent.',
+    'privacy.s5.title': '5. Google Fonts',
+    'privacy.s5.text': 'This site uses fonts from Google Fonts. When loading the page, your browser connects to Google servers to download fonts.',
+    'privacy.s6.title': '6. Contact form',
+    'privacy.s6.text': 'The contact form uses a mailto link to send messages via your email client. No data is stored on our server.',
+    'privacy.s7.title': '7. Your rights',
+    'privacy.s7.text': 'You have the right to access, correct, and delete your personal data. For questions, contact us at: office@slavijaproking.rs',
+    'privacy.s8.title': '8. Contact',
+    'privacy.s8.phone': 'Phone: +381 11 405 94 56',
   }
 };
 
