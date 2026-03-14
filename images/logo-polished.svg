@@ -35,7 +35,7 @@
             fill="none"
             stroke="#ffffff"
             stroke-opacity="0.275"
-            stroke-width="6.5"
+            stroke-width="0.0"
             shape-rendering="crispEdges"/>
       <path d="M45 0V46 M0 45H46"
             fill="none"
@@ -162,7 +162,7 @@
                C86 139 95 133 105 128
                Z"/>
       <path d="M359 56
-               V165
+               V164
                L416 202
                H610
                Z"/>

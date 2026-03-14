@@ -19,7 +19,7 @@ const translations = {
 
     // Hero
     'hero.badge': 'Od 2008. godine',
-    'hero.title': 'Gradimo <span class="text-accent">budućnost</span><br>sa poverenjem',
+    'hero.title': 'Gradimo <span class="text-accent">budućnost</span><br>poverenjem',
     'hero.subtitle': 'Projektovanje, nadzor projekata i konsalting u građevinarstvu. Respektabilna kompanija sa timom kompetentnih stručnjaka.',
     'hero.cta.services': 'Naše usluge',
     'hero.cta.contact': 'Kontaktirajte nas',
