@@ -168,6 +168,7 @@ const translations = {
     // Footer legal
     'footer.ident': 'Identifikacija',
     'footer.privacy': 'Politika privatnosti',
+    'footer.mapLink': 'Prikaži na mapi →',
 
     // Identifikacija page
     'ident.breadcrumb': 'Identifikacija',
@@ -372,6 +373,7 @@ const translations = {
     // Footer legal
     'footer.ident': 'Company info',
     'footer.privacy': 'Privacy policy',
+    'footer.mapLink': 'Show on map →',
 
     // Identifikacija page
     'ident.breadcrumb': 'Company info',

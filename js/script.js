@@ -223,16 +223,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------- MAP CONSENT (consent-based Google Maps) ----------
   function loadConsentContent() {
     document.querySelectorAll('[data-consent-src]').forEach(el => {
+      const isFooterMap = el.classList.contains('footer-map');
       const iframe = document.createElement('iframe');
       iframe.src = el.getAttribute('data-consent-src');
       iframe.width = '100%';
-      iframe.height = '350';
+      iframe.height = isFooterMap ? '120' : '350';
       iframe.style.cssText = 'border:0;display:block';
       iframe.setAttribute('allowfullscreen', '');
       iframe.setAttribute('loading', 'lazy');
       iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
       iframe.setAttribute('title', el.getAttribute('data-consent-title') || '');
-      el.parentNode.replaceChild(iframe, el);
+      if (isFooterMap) {
+        el.innerHTML = '';
+        el.appendChild(iframe);
+      } else {
+        el.parentNode.replaceChild(iframe, el);
+      }
     });
   }
 
