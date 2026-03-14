@@ -566,10 +566,10 @@ class I18n {
       el.setAttribute('aria-label', this.t(key));
     });
 
-    // Update lang toggle button flag
+    // Update lang toggle button text
     const langBtn = document.getElementById('langToggle');
     if (langBtn) {
-      langBtn.textContent = this.currentLang === 'sr' ? '\u{1F1EC}\u{1F1E7}' : '\u{1F1F7}\u{1F1F8}';
+      langBtn.textContent = this.currentLang === 'sr' ? 'EN' : 'SR';
     }
   }
 }
