@@ -263,9 +263,8 @@ button { font-family: var(--font); cursor: pointer; }
   border-radius: var(--radius-sm);
   background: transparent;
   color: var(--color-text-secondary);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  font-size: 1.2rem;
+  line-height: 1;
   transition: all var(--transition);
 }
 
@@ -714,6 +713,23 @@ button { font-family: var(--font); cursor: pointer; }
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.director-credential {
+  color: var(--color-text-secondary) !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0 !important;
+}
+
+.about-activity {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  margin-bottom: 1rem !important;
 }
 
 .about-stats {
@@ -1715,7 +1731,7 @@ button { font-family: var(--font); cursor: pointer; }
   .hero h1 { font-size: clamp(1.8rem, 8vw, 2.5rem); }
   .hero-text { font-size: 1rem; }
   .hero-actions { flex-direction: column; gap: 0.75rem; }
-  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-actions .btn { justify-content: center; }
 
   .section-title { font-size: clamp(1.5rem, 6vw, 2rem); }
 

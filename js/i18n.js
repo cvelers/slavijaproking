@@ -31,6 +31,8 @@ const translations = {
     'about.p1': 'Danas smo respektabilna kompanija koju čini tim kompetentnih stručnjaka iz oblasti visokogradnje, niskogradnje, hidrotehnike, mašinskih i elektro instalacija, sanacije objekata, hidroizolaterskih radova, kao i rušenja objekata invazivnim i neinvazivnim metodama.',
     'about.p2': 'Naš uspeh zasnivamo na primeni najboljih praksi, kontinuiranom istraživanju i kvalitetnom kadru koji upravlja građevinskim projektima kroz ceo životni ciklus — od prethodne analize do realizacije.',
     'about.director.title': 'Direktor',
+    'about.director.credentials': 'Sudski veštak za oblast građevinarstva — procena vrednosti',
+    'about.activity': 'Inženjerske delatnosti i tehničko savetovanje',
     'about.stat.years': 'Godina iskustva',
     'about.stat.projects': 'Realizovanih projekata',
     'about.stat.partners': 'Partnera u saradnji',
@@ -70,8 +72,51 @@ const translations = {
     'ref.tab.construction': 'Izvođenje',
     'ref.tab.design': 'Projektovanje',
     'ref.tab.demolition': 'Rušenje',
+    'ref.tab.supervision': 'Nadzor',
 
-    // Reference cards
+    // Reference cards — new projects (2018-2025)
+    'ref.yuhor.title': 'Fabrika "YUHOR" — proizvodni pogon',
+    'ref.yuhor.desc': 'Dogradnja i adaptacija proizvodnog pogona za fermentisane kobasice.',
+    'ref.gradac.title': 'Centar za kulturu "GRADAC" — Raška',
+    'ref.gradac.desc': 'Nova zgrada centra za kulturu, Po+Pr+1+Pk.',
+    'ref.vinarija.title': 'Vinarija Veličković — Banja',
+    'ref.vinarija.desc': 'Projektna dokumentacija za vinariju sa prostorom za tankove.',
+    'ref.trnavska.title': 'Fekalna kanalizacija — Trnavska reka',
+    'ref.trnavska.desc': 'Projektovanje i stručni nadzor izgradnje kanalizacije.',
+    'ref.vlasovski.title': 'Regulacija Vlasovskog potoka',
+    'ref.vlasovski.desc': 'Projektna dokumentacija za regulaciju potoka.',
+    'ref.josbapark.title': 'Rekonstrukcija parka — Jošanička banja',
+    'ref.josbapark.desc': 'Rekonstrukcija javnog parka u banjskom naselju.',
+    'ref.domzdravlja.title': 'Dom zdravlja Raška — dogradnja',
+    'ref.domzdravlja.desc': 'Projektovanje i nadzor dogradnje sa ugradnjom lifta.',
+    'ref.milovana.title': 'Urbani džepovi — Savski venac',
+    'ref.milovana.desc': 'Rekonstrukcija ul. Milovana Milovanovića i okolnih ulica.',
+    'ref.bircaninova.title': 'Urbani džepovi — Birčaninova',
+    'ref.bircaninova.desc': 'Rekonstrukcija delova ulica Birčaninove, Katićeve i Bul. oslobođenja.',
+    'ref.njegoseva.title': 'Urbani džepovi — Njegoševa',
+    'ref.njegoseva.desc': 'Rekonstrukcija delova ulica Njegoševe i Maksima Gorkog.',
+    'ref.milesevska.title': 'Urbani džepovi — Mileševska',
+    'ref.milesevska.desc': 'Rekonstrukcija delova ulica Mileševske, Cara Nikolaja II i Radivoja Koraća.',
+    'ref.majorailica.title': 'Urbani džepovi — Majora Ilića',
+    'ref.majorailica.desc': 'Rekonstrukcija ulica Majora Ilića, Dobre Mitrovića i Ilije Garašanina.',
+    'ref.dunavka.title': 'Mašinska zgrada — DUNAVKA',
+    'ref.dunavka.desc': 'Projekat mašinske zgrade između silosa, Sut+Pr+6, visine 48m.',
+    'ref.ibar.title': 'Zaštita obale reke Ibar',
+    'ref.ibar.desc': 'Zaštita i uređenje leve obale reke Ibar.',
+    'ref.piggy.title': 'Farma svinja — Rača',
+    'ref.piggy.desc': 'Rekonstrukcija dva objekta u okviru farme svinja.',
+    'ref.worldcenter.title': 'Poslovni kompleks "WORLD CENTER"',
+    'ref.worldcenter.desc': 'Nadogradnja Lamela 1 i 2 poslovnog kompleksa.',
+    'ref.julije.title': 'Stambeni objekat — Kneginje Julije 3',
+    'ref.julije.desc': 'Projekat konstrukcije stambenog objekta Po+Pr+4+Pk.',
+    'ref.duvanjska.title': 'Stambeni objekat — Duvanjska 13a',
+    'ref.duvanjska.desc': 'Projekat konstrukcije stambenog objekta Po+Pr+2+Pk.',
+    'ref.milankovicdom.title': 'Dom učenika "Milutin Milanković"',
+    'ref.milankovicdom.desc': 'Adaptacija krovne terase Malog doma.',
+    'ref.kamenmost.title': 'Kameni most — pregled konstrukcije',
+    'ref.kamenmost.desc': 'Elaborat o pregledu drumskog kamenog mosta preko reke Ibar (1895).',
+
+    // Reference cards — existing projects (2013-2016)
     'ref.zicka.title': 'Stambeno-poslovni kompleks ŽIČKA 5',
     'ref.zicka.desc': 'Temeljni radovi i podzemni nivoi (3 etaže) za stambeno-poslovni objekat.',
     'ref.kuehne.title': 'Carinski magacin Kuehne+Nagel',
@@ -181,6 +226,12 @@ const translations = {
     'ident.reg': 'Matični broj',
     'ident.director': 'Direktor',
     'ident.phone': 'Telefon / Fax',
+    'ident.apr': 'Registracija APR',
+    'ident.apr.value': 'Upisano 30.01.2008. pod brojem 3895/2008',
+    'ident.bank1': 'Banka INTESA a.d.',
+    'ident.bank2': 'UniCREDIT Banka',
+    'ident.court.expert': 'Sudski veštak',
+    'ident.court.expert.desc': 'Za oblast građevinarstva — procena vrednosti (Rešenje br. 740-05-01672/2010-03)',
 
     // Privacy page
     'privacy.breadcrumb': 'Politika privatnosti',
@@ -236,6 +287,8 @@ const translations = {
     'about.p1': 'Today we are a reputable company comprised of competent specialists in the fields of high-rise construction, civil works, hydroengineering, mechanical and electrical installations, building remediation, waterproofing, as well as building demolition using both invasive and non-invasive methods.',
     'about.p2': 'Our success is built on applying best practices, continuous research, and a quality workforce that manages construction projects through their entire lifecycle — from preliminary analysis to completion.',
     'about.director.title': 'Director',
+    'about.director.credentials': 'Court-appointed expert in construction — property valuation',
+    'about.activity': 'Engineering activities and technical consulting',
     'about.stat.years': 'Years of experience',
     'about.stat.projects': 'Completed projects',
     'about.stat.partners': 'Trusted partners',
@@ -275,8 +328,51 @@ const translations = {
     'ref.tab.construction': 'Construction',
     'ref.tab.design': 'Design',
     'ref.tab.demolition': 'Demolition',
+    'ref.tab.supervision': 'Supervision',
 
-    // Reference cards
+    // Reference cards — new projects (2018-2025)
+    'ref.yuhor.title': 'YUHOR Factory — production facility',
+    'ref.yuhor.desc': 'Extension and adaptation of fermented sausage production plant.',
+    'ref.gradac.title': '"GRADAC" Cultural Center — Raška',
+    'ref.gradac.desc': 'New cultural center building, B+GF+1+A.',
+    'ref.vinarija.title': 'Veličković Winery — Banja',
+    'ref.vinarija.desc': 'Design documentation for winery with tank storage facility.',
+    'ref.trnavska.title': 'Sewage system — Trnavska reka',
+    'ref.trnavska.desc': 'Design and expert supervision of sewage network construction.',
+    'ref.vlasovski.title': 'Vlasovski creek regulation',
+    'ref.vlasovski.desc': 'Project documentation for creek regulation.',
+    'ref.josbapark.title': 'Park reconstruction — Jošanička banja',
+    'ref.josbapark.desc': 'Reconstruction of the public park in the spa settlement.',
+    'ref.domzdravlja.title': 'Raška Health Center — extension',
+    'ref.domzdravlja.desc': 'Design and supervision of extension with elevator installation.',
+    'ref.milovana.title': 'Urban pockets — Savski venac',
+    'ref.milovana.desc': 'Reconstruction of Milovana Milovanovića and surrounding streets.',
+    'ref.bircaninova.title': 'Urban pockets — Birčaninova',
+    'ref.bircaninova.desc': 'Reconstruction of Birčaninova, Katićeva and Bul. oslobođenja.',
+    'ref.njegoseva.title': 'Urban pockets — Njegoševa',
+    'ref.njegoseva.desc': 'Reconstruction of Njegoševa and Maksima Gorkog streets.',
+    'ref.milesevska.title': 'Urban pockets — Mileševska',
+    'ref.milesevska.desc': 'Reconstruction of Mileševska, Cara Nikolaja II and Radivoja Koraća.',
+    'ref.majorailica.title': 'Urban pockets — Majora Ilića',
+    'ref.majorailica.desc': 'Reconstruction of Majora Ilića, Dobre Mitrovića and Ilije Garašanina.',
+    'ref.dunavka.title': 'Machine building — DUNAVKA',
+    'ref.dunavka.desc': 'Machine building between silos, B+GF+6, 48m height.',
+    'ref.ibar.title': 'Ibar riverbank protection',
+    'ref.ibar.desc': 'Protection and regulation of the left bank of the Ibar river.',
+    'ref.piggy.title': 'Pig farm — Rača',
+    'ref.piggy.desc': 'Reconstruction of two buildings within the pig farm complex.',
+    'ref.worldcenter.title': '"WORLD CENTER" Business Complex',
+    'ref.worldcenter.desc': 'Extension of Lamella 1 and 2 of the business complex.',
+    'ref.julije.title': 'Residential building — Kneginje Julije 3',
+    'ref.julije.desc': 'Structural design of residential building B+GF+4+A.',
+    'ref.duvanjska.title': 'Residential building — Duvanjska 13a',
+    'ref.duvanjska.desc': 'Structural design of residential building B+GF+2+A.',
+    'ref.milankovicdom.title': '"Milutin Milanković" Student Dormitory',
+    'ref.milankovicdom.desc': 'Roof terrace adaptation of the Small Building.',
+    'ref.kamenmost.title': 'Stone bridge — structural inspection',
+    'ref.kamenmost.desc': 'Inspection report of the historic stone road bridge over Ibar river (1895).',
+
+    // Reference cards — existing projects (2013-2016)
     'ref.zicka.title': 'ŽIČKA 5 Residential-Commercial Complex',
     'ref.zicka.desc': 'Foundation pit and underground levels (3 floors) for a mixed-use building.',
     'ref.kuehne.title': 'Kuehne+Nagel Customs Warehouse',
@@ -386,6 +482,12 @@ const translations = {
     'ident.reg': 'Registration no.',
     'ident.director': 'Director',
     'ident.phone': 'Phone / Fax',
+    'ident.apr': 'APR Registration',
+    'ident.apr.value': 'Registered 30.01.2008 under no. 3895/2008',
+    'ident.bank1': 'Banka INTESA a.d.',
+    'ident.bank2': 'UniCREDIT Bank',
+    'ident.court.expert': 'Court Expert',
+    'ident.court.expert.desc': 'Construction field — property valuation (Resolution no. 740-05-01672/2010-03)',
 
     // Privacy page
     'privacy.breadcrumb': 'Privacy policy',
@@ -464,10 +566,10 @@ class I18n {
       el.setAttribute('aria-label', this.t(key));
     });
 
-    // Update lang toggle button text
+    // Update lang toggle button flag
     const langBtn = document.getElementById('langToggle');
     if (langBtn) {
-      langBtn.textContent = this.currentLang === 'sr' ? 'EN' : 'SR';
+      langBtn.textContent = this.currentLang === 'sr' ? '\u{1F1EC}\u{1F1E7}' : '\u{1F1F7}\u{1F1F8}';
     }
   }
 }

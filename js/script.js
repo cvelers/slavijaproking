@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = tab.dataset.tab;
 
         refCards.forEach(card => {
-          if (category === 'all' || card.dataset.category === category) {
+          if (category === 'all' || card.dataset.category.split(' ').includes(category)) {
             card.classList.remove('is-hidden');
             card.style.opacity = '0';
             card.style.transform = 'translateY(20px)';
