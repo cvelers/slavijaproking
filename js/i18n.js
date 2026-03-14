@@ -54,6 +54,7 @@ const translations = {
     'services.demolition.desc': 'Profesionalno rušenje objekata invazivnim i neinvazivnim metodama uz izradu glavnih projekata rušenja.',
     'services.demining.title': 'Humano deminiranje',
     'services.demining.desc': 'Specijalizovane usluge humanog deminiranja sa poštovanjem najviših standarda bezbednosti.',
+    'services.viewAll': 'Sve usluge',
 
     // Stats Banner
     'stats.years': 'Godina rada',
@@ -207,6 +208,7 @@ const translations = {
     'services.demolition.desc': 'Professional building demolition using invasive and non-invasive methods with full project documentation.',
     'services.demining.title': 'Humanitarian demining',
     'services.demining.desc': 'Specialized humanitarian demining services adhering to the highest safety standards.',
+    'services.viewAll': 'All services',
 
     // Stats Banner
     'stats.years': 'Years in business',

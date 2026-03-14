@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 718 520" width="718" height="520">
+  <defs>
+    <style>
+      .mark {
+        transform-box: view-box;
+        transform-origin: center;
+        animation: markDrift 8.5s ease-in-out infinite;
+      }
+      .left-mass,
+      .right-mass,
+      .core {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      .left-mass {
+        animation: leftShift 5.2s cubic-bezier(0.4,0,0.2,1) infinite;
+      }
+      .right-mass {
+        animation: rightShift 5.2s cubic-bezier(0.4,0,0.2,1) infinite;
+      }
+      .core {
+        animation: coreLift 5.2s cubic-bezier(0.4,0,0.2,1) infinite;
+      }
+      @keyframes markDrift {
+        0%, 100% { transform: translate(0px, 0px); }
+        25%      { transform: translate(0.8px, -0.6px); }
+        50%      { transform: translate(1.4px, -1px); }
+        75%      { transform: translate(0.6px, -0.4px); }
+      }
+      @keyframes leftShift {
+        0%, 100% { transform: translateX(0px); }
+        50%      { transform: translateX(-3px); }
+      }
+      @keyframes rightShift {
+        0%, 100% { transform: translateX(0px); }
+        50%      { transform: translateX(3px); }
+      }
+      @keyframes coreLift {
+        0%, 100% { transform: translateY(0px); }
+        50%      { transform: translateY(-2px); }
+      }
+    </style>
+    <mask id="logo-cutouts" maskUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="718" height="520" fill="#ffffff"/>
+      <path fill="#000000"
+            d="M199 217
+               V209
+               A14 14 0 0 1 193 198
+               L262 154
+               L302 130
+               L342 154
+               L415 204
+               H610
+               V217
+               Z"/>
+      <path fill="#000000"
+            d="M357 316
+               H587
+               C590 316 592 319 592 322
+               C592 325 590 328 587 328
+               H359
+               Z"/>
+    </mask>
+  </defs>
+  <g class="mark" mask="url(#logo-cutouts)">
+    <g class="left-mass" fill="#5b5b5b">
+      <path d="M245 56
+               V165
+               L188 199
+               C184 202 184 215 189 217
+               H245
+               V316
+               H141
+               C118 316 97 309 79 292
+               C64 278 56 257 56 236
+               V201
+               C56 180 64 161 79 146
+               C86 139 95 133 105 128
+               Z"/>
+      <rect x="56" y="328" width="189" height="102"/>
+    </g>
+    <g class="right-mass" fill="#5b5b5b">
+      <path d="M359 56
+               V168
+               L416 202
+               H610
+               Z"/>
+      <path d="M359 217
+               H593
+               C648 217 691 265 691 323
+               C691 382 648 430 593 430
+               H359
+               Z"/>
+    </g>
+    <path class="core" fill="#ef7a21"
+          d="M255 500
+             V58
+             A47 19 0 0 1 349 58
+             V500
+             Z"/>
+  </g>
+</svg>

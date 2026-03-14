@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference — Slavija PROKING</title>
+  <meta name="description" content="Pregled realizovanih projekata Slavija PROKING u oblastima projektovanja, izvođenja radova i rušenja objekata.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#ef7a21">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{if(localStorage.getItem("sp-theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Slavija PROKING" class="logo-icon">
+        <span class="logo-text">SLAVIJA <span class="logo-accent">PROKING</span></span>
+      </a>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Change language">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="lang-toggle__label">EN</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-i18n-text="nav.home">Početna</a></li>
+        <li><a href="o-nama.html" class="nav-link" data-i18n-text="nav.about">O nama</a></li>
+        <li><a href="usluge.html" class="nav-link" data-i18n-text="nav.services">Usluge</a></li>
+        <li><a href="reference.html" class="nav-link is-active" data-i18n-text="nav.references">Reference</a></li>
+        <li><a href="kontakt.html" class="nav-link" data-i18n-text="nav.contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-breadcrumb">
+          <a href="index.html" data-i18n-text="nav.home">Početna</a>
+          <span class="separator">/</span>
+          <span data-i18n-text="nav.references">Reference</span>
+        </div>
+        <h1 class="page-hero-title" data-i18n="ref.title">Istaknuti <span class="text-accent">projekti</span></h1>
+        <p class="page-hero-subtitle" data-i18n-text="ref.intro">Pregled nekih od naših realizovanih projekata u oblasti projektovanja, izvođenja radova i nadzora.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="ref-tabs reveal">
+          <button class="ref-tab active" data-tab="all" data-i18n-text="ref.tab.all">Svi</button>
+          <button class="ref-tab" data-tab="construction" data-i18n-text="ref.tab.construction">Izvođenje</button>
+          <button class="ref-tab" data-tab="design" data-i18n-text="ref.tab.design">Projektovanje</button>
+          <button class="ref-tab" data-tab="demolition" data-i18n-text="ref.tab.demolition">Rušenje</button>
+        </div>
+        <div class="ref-grid">
+          <div class="ref-card reveal" data-category="construction">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.zicka.title">Stambeno-poslovni kompleks ŽIČKA 5</h4>
+              <p class="ref-card-meta">Beograd &middot; 1.500 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.zicka.desc">Temeljni radovi i podzemni nivoi (3 etaže) za stambeno-poslovni objekat.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="construction">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.kuehne.title">Carinski magacin Kuehne+Nagel</h4>
+              <p class="ref-card-meta">Ugrinovci &middot; 1.250 m&sup2; &middot; 2014</p>
+              <p class="ref-card-desc" data-i18n-text="ref.kuehne.desc">Proširenje armiranobetonskog carinskog magacina za međunarodnu logističku kompaniju.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="construction">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.fizika.title">Institut za fiziku — sanacija konstrukcije</h4>
+              <p class="ref-card-meta">Zemun &middot; 1.450 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.fizika.desc">Kompletna sanacija konstrukcije objekta Instituta za fiziku.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="construction">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.umka.title">Porodična kuća sa bazenom — Umka</h4>
+              <p class="ref-card-meta">Beograd &middot; 220 m&sup2; &middot; 2016</p>
+              <p class="ref-card-desc" data-i18n-text="ref.umka.desc">Izgradnja porodične kuće sa bazenom i zaštitom od klizišta.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="construction">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.mcdonalds.title">McDonald's — fasaderski radovi</h4>
+              <p class="ref-card-meta">TC Stop Shop, Niš &middot; 2016</p>
+              <p class="ref-card-desc" data-i18n-text="ref.mcdonalds.desc">Kompletni fasaderski radovi na objektu McDonald's u trgovačkom centru.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="construction">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6V2"/><path d="M6 18v4"/><path d="M18 18v4"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.drmno.title">Magacin pomoćne mehanizacije DRMNO</h4>
+              <p class="ref-card-meta">Kostolac &middot; 770 m&sup2; &middot; 2014</p>
+              <p class="ref-card-desc" data-i18n-text="ref.drmno.desc">Izgradnja magacina pomoćne mehanizacije za potrebe termoelektrane.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="design">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.mlekara.title">Mlekara Stara Planina — rekonstrukcija</h4>
+              <p class="ref-card-meta">Dimitrovgrad &middot; 4.500 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.mlekara.desc">Projektovanje rekonstrukcije hale mlekare sa kompletnom tehničkom dokumentacijom.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="design">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.diplon.title">Tržni centar Diplon — Zemun Polje</h4>
+              <p class="ref-card-meta">Zemun Polje &middot; 1.488 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.diplon.desc">Kompletno projektovanje tržnog centra sa pratećom infrastrukturom.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="design">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.school.title">OŠ „Milan Ilić Čiča" — rekonstrukcija</h4>
+              <p class="ref-card-meta">Aranđelovac &middot; 860 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.school.desc">Projektovanje i nadzor rekonstrukcije osnovne škole.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="design">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.rivers.title">Regulacija korita reka Jošanica i Samokovka</h4>
+              <p class="ref-card-meta">Raška &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.rivers.desc">Izrada projektne dokumentacije za regulaciju rečnih korita.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="design">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.sportshall.title">Sportska hala — zamena krova i fasade</h4>
+              <p class="ref-card-meta">Svilajnac &middot; 2.100 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.sportshall.desc">Projekat zamene krovnog pokrivača i fasadnih elemenata sportske hale.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="demolition">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.nis.title">Klinički centar Niš — kotlarnica</h4>
+              <p class="ref-card-meta">Niš &middot; 1.150 m&sup2; &middot; 2014</p>
+              <p class="ref-card-desc" data-i18n-text="ref.nis.desc">Izrada projekta i rušenje kotlarnice Kliničkog centra Niš.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="demolition">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.bulevar.title">Bul. Kneza A. Karađorđevića — rušenje</h4>
+              <p class="ref-card-meta">Beograd &middot; 689 m&sup2; &middot; 2015</p>
+              <p class="ref-card-desc" data-i18n-text="ref.bulevar.desc">Projekat rušenja i izvođenje rušenja stambenog objekta na bulevaru.</p>
+            </div>
+          </div>
+          <div class="ref-card reveal" data-category="demolition">
+            <div class="ref-card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <div class="ref-card-body">
+              <h4 class="ref-card-title" data-i18n-text="ref.protica.title">Namesnika Protića — stambeni objekat</h4>
+              <p class="ref-card-meta">Beograd &middot; 593 m&sup2; &middot; 2013</p>
+              <p class="ref-card-desc" data-i18n-text="ref.protica.desc">Izrada projekta rušenja za stambenu konstrukciju u centru Beograda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo-white.svg" alt="Slavija PROKING" class="footer-logo-icon">
+            <div><span class="footer-logo-name">SLAVIJA PROKING</span><span class="footer-logo-sub">d.o.o. Beograd</span></div>
+          </div>
+          <p class="footer-desc" data-i18n-text="footer.desc">Projektovanje, nadzor projekata i konsalting u građevinarstvu od 2008. godine.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n-text="footer.nav">Navigacija</h4>
+          <ul class="footer-links">
+            <li><a href="o-nama.html" data-i18n-text="nav.about">O nama</a></li>
+            <li><a href="usluge.html" data-i18n-text="nav.services">Usluge</a></li>
+            <li><a href="reference.html" data-i18n-text="nav.references">Reference</a></li>
+            <li><a href="kontakt.html" data-i18n-text="nav.contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading" data-i18n-text="footer.contact">Kontakt</h4>
+          <div class="footer-contact-info">
+            <p>Mihajla Bandura 15/6<br>Zemun Polje, 11080 Beograd</p>
+            <p>+381 11 405 94 56</p>
+            <p><a href="mailto:office@slavijaproking.rs">office@slavijaproking.rs</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> Slavija PROKING d.o.o. <span data-i18n-text="footer.rights">Sva prava zadržana.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
