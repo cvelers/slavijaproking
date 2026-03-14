@@ -99,22 +99,19 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const parent = entry.target.parentElement;
-          const siblings = parent.querySelectorAll('.reveal');
-          let idx = 0;
-          siblings.forEach((sib, j) => {
-            if (sib === entry.target) idx = j;
-          });
+          const siblings = Array.from(parent.querySelectorAll('.reveal:not(.is-hidden)'));
+          const idx = siblings.indexOf(entry.target);
 
           setTimeout(() => {
             entry.target.classList.add('is-visible');
-          }, idx * 80);
+          }, Math.max(0, idx) * 50);
 
           observerReveal.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -60px 0px'
+      threshold: 0.05,
+      rootMargin: '0px 0px -20px 0px'
     });
 
     reveals.forEach(el => observerReveal.observe(el));
@@ -166,17 +163,20 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.classList.add('active');
 
         const category = tab.dataset.tab;
+        let visibleIdx = 0;
 
         refCards.forEach(card => {
           if (category === 'all' || card.dataset.category.split(' ').includes(category)) {
             card.classList.remove('is-hidden');
             card.style.opacity = '0';
             card.style.transform = 'translateY(20px)';
-            requestAnimationFrame(() => {
+            const delay = visibleIdx * 40;
+            visibleIdx++;
+            setTimeout(() => {
               card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
               card.style.opacity = '1';
               card.style.transform = 'translateY(0)';
-            });
+            }, delay);
           } else {
             card.classList.add('is-hidden');
           }
