@@ -228,8 +228,6 @@ const translations = {
     'ident.phone': 'Telefon / Fax',
     'ident.apr': 'Registracija APR',
     'ident.apr.value': 'Upisano 30.01.2008. pod brojem 3895/2008',
-    'ident.bank1': 'Banka INTESA a.d.',
-    'ident.bank2': 'UniCREDIT Banka',
     'ident.court.expert': 'Sudski veštak',
     'ident.court.expert.desc': 'Za oblast građevinarstva — procena vrednosti (Rešenje br. 740-05-01672/2010-03)',
 
@@ -484,8 +482,6 @@ const translations = {
     'ident.phone': 'Phone / Fax',
     'ident.apr': 'APR Registration',
     'ident.apr.value': 'Registered 30.01.2008 under no. 3895/2008',
-    'ident.bank1': 'Banka INTESA a.d.',
-    'ident.bank2': 'UniCREDIT Bank',
     'ident.court.expert': 'Court Expert',
     'ident.court.expert.desc': 'Construction field — property valuation (Resolution no. 740-05-01672/2010-03)',
 
