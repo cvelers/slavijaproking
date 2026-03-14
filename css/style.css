@@ -193,15 +193,9 @@ button { font-family: var(--font); cursor: pointer; }
   transition: color 0.35s ease;
 }
 
-/* Hover: swap colors */
-.logo:hover .logo-text { color: #d96a12; }
-.logo:hover .logo-text .logo-accent { color: #5b5b5b; }
-
 /* Dark mode logo text */
 [data-theme="dark"] .logo-text { color: #b0b0b0; }
 [data-theme="dark"] .logo-text .logo-accent { color: #f59542; }
-[data-theme="dark"] .logo:hover .logo-text { color: #f59542; }
-[data-theme="dark"] .logo:hover .logo-text .logo-accent { color: #b0b0b0; }
 
 /* Dark mode logo SVG swap — handled via JS */
 
