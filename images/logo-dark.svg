@@ -4,46 +4,9 @@
      height="520"
      shape-rendering="geometricPrecision">
   <defs>
-    <mask id="grey-cutouts-d" maskUnits="userSpaceOnUse">
-      <rect width="718" height="520" fill="#ffffff"/>
-      <path fill="#000000"
-            d="M190 219
-               V209
-               A17 17 0 0 1 192 196
-               L260 152
-               L302 127
-               L344 152
-               L417 203
-               H615
-               V219
-               Z"/>
-      <path fill="#000000"
-            d="M359 315
-               H590
-               C594 315 597 318 597 322
-               C597 326 594 329 590 329
-               H359
-               Z"/>
-    </mask>
-    <filter id="shadow-d" x="-12%" y="-12%" width="130%" height="140%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="8" stdDeviation="6.5" flood-color="#000000" flood-opacity="0.35"/>
-      <feDropShadow dx="0" dy="2" stdDeviation="1.1" flood-color="#000000" flood-opacity="0.20"/>
-    </filter>
-    <pattern id="grey-grid-d" width="46" height="46" patternUnits="userSpaceOnUse">
-      <rect width="46" height="46" fill="none"/>
-      <path d="M45.5 0V46 M0 45.5H46"
-            fill="none"
-            stroke="#ffffff"
-            stroke-opacity="0.18"
-            stroke-width="0.0"
-            shape-rendering="crispEdges"/>
-      <path d="M45 0V46 M0 45H46"
-            fill="none"
-            stroke="#000000"
-            stroke-opacity="0.06"
-            stroke-width="0.7"
-            shape-rendering="crispEdges"/>
-    </pattern>
+    <clipPath id="grey-cutouts-d" clipPathUnits="userSpaceOnUse">
+      <path clip-rule="evenodd" d="M0 0H718V520H0Z M190 219V209A17 17 0 0 1 192 196L260 152L302 127L344 152L417 203H615V219Z M359 315H590C594 315 597 318 597 322C597 326 594 329 590 329H359Z"/>
+    </clipPath>
     <linearGradient id="grey-fill-d" x1="56" y1="56" x2="691" y2="430" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#c8c8c8"/>
       <stop offset="18%" stop-color="#a8a8a8"/>
@@ -58,8 +21,8 @@
     </linearGradient>
   </defs>
   <!-- GREY SYSTEM -->
-  <g filter="url(#shadow-d)">
-    <g mask="url(#grey-cutouts-d)">
+  <g>
+    <g clip-path="url(#grey-cutouts-d)">
       <g fill="url(#grey-fill-d)">
         <path d="M245 56
                  V165
@@ -88,33 +51,6 @@
                  Z"/>
       </g>
       <g fill="url(#grey-top-d)">
-        <path d="M245 56
-                 V165
-                 L188 199
-                 C184 202 184 215 189 217
-                 H245
-                 V316
-                 H141
-                 C118 316 97 309 79 292
-                 C64 278 56 257 56 236
-                 V201
-                 C56 180 64 161 79 146
-                 C86 139 95 133 105 128
-                 Z"/>
-        <path d="M359 56
-                 V168
-                 L416 202
-                 H610
-                 Z"/>
-        <rect x="56" y="328" width="189" height="102"/>
-        <path d="M359 217
-                 H593
-                 C648 217 691 265 691 323
-                 C691 382 648 430 593 430
-                 H359
-                 Z"/>
-      </g>
-      <g fill="url(#grey-grid-d)" opacity="0.5">
         <path d="M245 56
                  V165
                  L188 199

@@ -171,6 +171,7 @@ button { font-family: var(--font); cursor: pointer; }
   height: 47px;
   width: auto;
   transition: transform 0.35s ease;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.12));
 }
 
 .logo:hover .logo-icon { transform: scale(1.08); }
