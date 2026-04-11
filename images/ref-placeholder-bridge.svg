@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+      <feBlend in="SourceGraphic" in2="mono" mode="multiply"/>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0d0bc"/>
+      <stop offset="50%" stop-color="#d0b898"/>
+      <stop offset="100%" stop-color="#a08060"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a5a48" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4a3e30" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="sunref" cx="0.5" cy="0.55" r="0.4">
+      <stop offset="0%" stop-color="#ef7a21" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ef7a21" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#sky)"/>
+  <!-- Distant hills -->
+  <path d="M0,140 Q100,110 180,130 Q280,95 380,120 Q480,90 540,115 Q580,105 600,118 L600,180 L0,180 Z" fill="#8a7a65" opacity="0.15"/>
+  <!-- Bridge structure -->
+  <g filter="url(#softglow)">
+    <!-- Bridge deck -->
+    <rect x="40" y="155" width="520" height="18" fill="#4a3e30" rx="2"/>
+    <!-- Three stone arches -->
+    <path d="M60,173 Q150,260 240,173" stroke="#4a3e30" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M220,173 Q310,270 400,173" stroke="#4a3e30" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M380,173 Q470,260 560,173" stroke="#4a3e30" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- Pier bases -->
+    <rect x="225" y="173" width="16" height="80" fill="#4a3e30"/>
+    <rect x="378" y="173" width="16" height="80" fill="#4a3e30"/>
+    <!-- Abutments -->
+    <rect x="40" y="155" width="22" height="100" fill="#4a3e30"/>
+    <rect x="538" y="155" width="22" height="100" fill="#4a3e30"/>
+  </g>
+  <!-- Railing silhouette -->
+  <rect x="40" y="148" width="520" height="3" fill="#5a4e40" opacity="0.6"/>
+  <g stroke="#5a4e40" stroke-width="2" opacity="0.4">
+    <line x1="80" y1="148" x2="80" y2="155"/>
+    <line x1="120" y1="148" x2="120" y2="155"/>
+    <line x1="160" y1="148" x2="160" y2="155"/>
+    <line x1="200" y1="148" x2="200" y2="155"/>
+    <line x1="260" y1="148" x2="260" y2="155"/>
+    <line x1="300" y1="148" x2="300" y2="155"/>
+    <line x1="340" y1="148" x2="340" y2="155"/>
+    <line x1="420" y1="148" x2="420" y2="155"/>
+    <line x1="460" y1="148" x2="460" y2="155"/>
+    <line x1="500" y1="148" x2="500" y2="155"/>
+  </g>
+  <!-- Water surface -->
+  <rect x="0" y="200" width="600" height="140" fill="url(#water)"/>
+  <!-- Water reflection of arches -->
+  <g opacity="0.12">
+    <path d="M60,227 Q150,200 240,227" stroke="#ef7a21" stroke-width="6" fill="none"/>
+    <path d="M220,227 Q310,195 400,227" stroke="#ef7a21" stroke-width="6" fill="none"/>
+    <path d="M380,227 Q470,200 560,227" stroke="#ef7a21" stroke-width="6" fill="none"/>
+  </g>
+  <!-- Sun reflection on water -->
+  <rect width="600" height="340" fill="url(#sunref)"/>
+  <!-- Subtle water ripples -->
+  <g stroke="#c4a878" stroke-width="1" opacity="0.12" fill="none">
+    <path d="M20,230 Q80,225 140,232 Q200,238 260,230"/>
+    <path d="M280,250 Q340,244 400,252 Q460,258 520,248"/>
+    <path d="M60,270 Q130,264 200,272 Q270,278 340,268"/>
+    <path d="M350,290 Q420,284 490,292 Q530,296 580,288"/>
+  </g>
+  <!-- Grain -->
+  <rect width="600" height="340" filter="url(#grain)" opacity="0.1"/>
+</svg>

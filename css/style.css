@@ -928,30 +928,58 @@ button { font-family: var(--font); cursor: pointer; }
 .ref-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .ref-card {
   display: flex;
-  gap: 1.25rem;
+  flex-direction: column;
   background: var(--color-bg-card);
-  padding: 1.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--color-border-light);
   transition: all var(--transition);
+  overflow: hidden;
 }
 
 .ref-card:hover {
   border-color: transparent;
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.ref-card:hover .ref-card-img img,
+.ref-card:hover .ref-card-img svg {
+  transform: scale(1.04);
 }
 
 .ref-card.is-hidden { display: none; }
 
+.ref-card-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+  flex-shrink: 0;
+}
+
+.ref-card-img img,
+.ref-card-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ref-card-content {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
 .ref-card-icon {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -964,20 +992,21 @@ button { font-family: var(--font); cursor: pointer; }
 .ref-card-body { flex: 1; min-width: 0; }
 
 .ref-card-title {
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--color-text);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.35;
 }
 
 .ref-card-meta {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--color-text-muted);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .ref-card-desc {
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
   margin: 0;

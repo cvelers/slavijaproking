@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="mono"/>
+      <feBlend in="SourceGraphic" in2="mono" mode="multiply"/>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e5d8c8"/>
+      <stop offset="100%" stop-color="#c0a888"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.3" r="0.45">
+      <stop offset="0%" stop-color="#ef7a21" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ef7a21" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#sky)"/>
+  <rect width="600" height="340" fill="url(#glow)"/>
+  <!-- Classical public building -->
+  <g filter="url(#softglow)">
+    <!-- Steps -->
+    <rect x="120" y="260" width="360" height="8" fill="#4a3e30" rx="1"/>
+    <rect x="135" y="252" width="330" height="8" fill="#4a3e30" rx="1"/>
+    <!-- Main body -->
+    <rect x="150" y="115" width="300" height="140" fill="#3e3428" rx="2"/>
+    <!-- Pediment -->
+    <polygon points="140,115 300,55 460,115" fill="#4a3e30"/>
+  </g>
+  <!-- Columns -->
+  <g opacity="0.8">
+    <rect x="175" y="115" width="10" height="140" fill="#5a4e40" rx="2"/>
+    <rect x="220" y="115" width="10" height="140" fill="#5a4e40" rx="2"/>
+    <rect x="265" y="115" width="10" height="140" fill="#5a4e40" rx="2"/>
+    <rect x="320" y="115" width="10" height="140" fill="#5a4e40" rx="2"/>
+    <rect x="365" y="115" width="10" height="140" fill="#5a4e40" rx="2"/>
+    <rect x="410" y="115" width="10" height="140" fill="#5a4e40" rx="2"/>
+  </g>
+  <!-- Windows with warm glow -->
+  <rect x="195" y="150" width="18" height="28" rx="2" fill="#ef7a21" opacity="0.3"/>
+  <rect x="240" y="150" width="18" height="28" rx="2" fill="#daa060" opacity="0.35"/>
+  <rect x="290" y="150" width="18" height="28" rx="2" fill="#ef7a21" opacity="0.25"/>
+  <rect x="338" y="150" width="18" height="28" rx="2" fill="#daa060" opacity="0.3"/>
+  <rect x="385" y="150" width="18" height="28" rx="2" fill="#ef7a21" opacity="0.35"/>
+  <!-- Grand entrance -->
+  <rect x="275" y="205" width="50" height="50" rx="3" fill="#2a2218"/>
+  <path d="M275,205 Q300,188 325,205" fill="#3a3028"/>
+  <!-- Pediment ornament -->
+  <circle cx="300" cy="82" r="10" fill="#ef7a21" opacity="0.2"/>
+  <circle cx="300" cy="82" r="5" fill="#ef7a21" opacity="0.15"/>
+  <!-- Trees -->
+  <g opacity="0.2">
+    <ellipse cx="95" cy="220" rx="30" ry="35" fill="#5a6a48"/>
+    <rect x="93" y="255" width="4" height="25" fill="#4a3e32"/>
+    <ellipse cx="505" cy="215" rx="32" ry="38" fill="#5a6a48"/>
+    <rect x="503" y="253" width="4" height="27" fill="#4a3e32"/>
+  </g>
+  <!-- Ground -->
+  <rect x="0" y="270" width="600" height="70" fill="#3a3028" opacity="0.4"/>
+  <rect x="0" y="268" width="600" height="2" fill="#ef7a21" opacity="0.15"/>
+  <!-- Grain -->
+  <rect width="600" height="340" filter="url(#grain)" opacity="0.1"/>
+</svg>
