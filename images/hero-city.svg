@@ -209,7 +209,7 @@
   <rect x="480" y="505" width="8" height="12" rx="1" fill="#daa060" opacity="0.12"/>
 
   <!-- ===== CENTER BUILDINGS (toned down, behind text) ===== -->
-  <g opacity="0.09">
+  <g opacity="0.18">
     <rect x="520" y="420" width="45" height="130" fill="#5a4e40" rx="2"/>
     <rect x="575" y="380" width="55" height="170" fill="#5a4e40" rx="2"/>
     <rect x="640" y="400" width="40" height="150" fill="#5a4e40" rx="2"/>
@@ -223,7 +223,7 @@
     <rect x="1140" y="430" width="40" height="120" fill="#5a4e40" rx="2"/>
   </g>
   <!-- Faint center windows -->
-  <g opacity="0.04">
+  <g opacity="0.08">
     <rect x="585" y="400" width="8" height="10" rx="1" fill="#ef7a21"/>
     <rect x="600" y="400" width="8" height="10" rx="1" fill="#daa060"/>
     <rect x="615" y="400" width="8" height="10" rx="1" fill="#ef7a21"/>
