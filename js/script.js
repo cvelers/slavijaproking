@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const parent = entry.target.parentElement;
-          const siblings = Array.from(parent.querySelectorAll('.reveal:not(.is-hidden)'));
+          const siblings = Array.from(parent.querySelectorAll('.reveal:not(.is-hidden):not(.is-visible)'));
           const idx = siblings.indexOf(entry.target);
 
           setTimeout(() => {
@@ -110,8 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.05,
-      rootMargin: '0px 0px -20px 0px'
+      threshold: 0.02,
+      rootMargin: '0px 0px 60px 0px'
     });
 
     reveals.forEach(el => observerReveal.observe(el));
