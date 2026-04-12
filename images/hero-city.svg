@@ -45,9 +45,21 @@
   <!-- Clouds -->
   <g opacity="0.06" fill="#88888e">
     <ellipse cx="250" cy="110" rx="130" ry="16"/>
+    <ellipse cx="320" cy="105" rx="60" ry="10"/>
     <ellipse cx="700" cy="80" rx="100" ry="12"/>
+    <ellipse cx="770" cy="76" rx="50" ry="8"/>
+    <ellipse cx="1000" cy="150" rx="90" ry="11"/>
     <ellipse cx="1200" cy="100" rx="110" ry="14"/>
+    <ellipse cx="1280" cy="96" rx="55" ry="9"/>
     <ellipse cx="1550" cy="130" rx="80" ry="10"/>
+    <ellipse cx="1830" cy="100" rx="70" ry="9"/>
+    <ellipse cx="100" cy="160" rx="60" ry="8"/>
+    <ellipse cx="550" cy="145" rx="75" ry="10"/>
+  </g>
+
+  <!-- Horizon haze (warm atmospheric glow where sky meets city) -->
+  <g opacity="0.03">
+    <rect x="0" y="380" width="1920" height="220" fill="#ef7a21"/>
   </g>
 
   <!-- ===== CRANE 1 — LEFT SKY ===== -->
@@ -69,16 +81,29 @@
     <circle cx="183" cy="98" r="3" fill="#ef7a21" opacity="0.5"/>
   </g>
 
-  <!-- ===== CRANE 2 — CENTER SKY (above text, higher up) ===== -->
-  <g opacity="0.15">
-    <rect x="820" y="40" width="5" height="200" fill="#505052"/>
-    <rect x="720" y="42" width="200" height="4" fill="#505052"/>
-    <rect x="828" y="42" width="80" height="4" fill="#505052"/>
-    <line x1="825" y1="42" x2="720" y2="75" stroke="#505052" stroke-width="1.5"/>
-    <line x1="825" y1="42" x2="920" y2="65" stroke="#505052" stroke-width="1.5"/>
-    <line x1="760" y1="46" x2="760" y2="140" stroke="#505052" stroke-width="1"/>
-    <rect x="755" y="138" width="10" height="6" fill="#505052" rx="1"/>
-    <circle cx="822" cy="38" r="2.5" fill="#ef7a21" opacity="0.4"/>
+  <!-- ===== CRANE 2 — CENTER SKY (prominent, above text) ===== -->
+  <g opacity="0.3">
+    <rect x="780" y="20" width="7" height="280" fill="#5e5e62"/>
+    <rect x="650" y="22" width="260" height="6" fill="#5e5e62"/>
+    <rect x="790" y="22" width="110" height="6" fill="#5e5e62"/>
+    <!-- Main cables -->
+    <line x1="787" y1="22" x2="650" y2="65" stroke="#5e5e62" stroke-width="2"/>
+    <line x1="787" y1="22" x2="910" y2="55" stroke="#5e5e62" stroke-width="2"/>
+    <!-- Hook cable + hook -->
+    <line x1="710" y1="28" x2="710" y2="170" stroke="#5e5e62" stroke-width="1.5"/>
+    <rect x="703" y="168" width="14" height="10" fill="#5e5e62" rx="1"/>
+    <path d="M707,178 Q710,188 713,178" stroke="#5e5e62" stroke-width="1.5" fill="none"/>
+    <!-- Cross bracing -->
+    <line x1="778" y1="60" x2="788" y2="140" stroke="#5e5e62" stroke-width="1"/>
+    <line x1="788" y1="60" x2="778" y2="140" stroke="#5e5e62" stroke-width="1"/>
+    <line x1="778" y1="140" x2="788" y2="220" stroke="#5e5e62" stroke-width="1"/>
+    <line x1="788" y1="140" x2="778" y2="220" stroke="#5e5e62" stroke-width="1"/>
+    <!-- Counterweight -->
+    <rect x="870" y="28" width="30" height="18" fill="#505052"/>
+    <!-- Cab -->
+    <rect x="774" y="260" width="18" height="16" fill="#505052" rx="1"/>
+    <!-- Aviation light -->
+    <circle cx="783" cy="18" r="3.5" fill="#ef7a21" opacity="0.6"/>
   </g>
 
   <!-- ===== CRANE 3 — RIGHT SKY ===== -->
@@ -98,6 +123,49 @@
     <line x1="1658" y1="320" x2="1648" y2="420" stroke="#505052" stroke-width="1"/>
     <rect x="1710" y="88" width="22" height="14" fill="#444446"/>
     <circle cx="1653" cy="78" r="3" fill="#ef7a21" opacity="0.45"/>
+  </g>
+
+  <!-- ===== STARS ===== -->
+  <g opacity="0.12" fill="#c0c0c6">
+    <circle cx="50" cy="35" r="1"/>
+    <circle cx="140" cy="60" r="0.8"/>
+    <circle cx="280" cy="25" r="1.2"/>
+    <circle cx="420" cy="50" r="0.8"/>
+    <circle cx="520" cy="18" r="1"/>
+    <circle cx="610" cy="55" r="0.7"/>
+    <circle cx="680" cy="30" r="1.1"/>
+    <circle cx="960" cy="22" r="0.9"/>
+    <circle cx="1050" cy="48" r="0.8"/>
+    <circle cx="1150" cy="15" r="1"/>
+    <circle cx="1280" cy="55" r="0.7"/>
+    <circle cx="1380" cy="28" r="1.1"/>
+    <circle cx="1450" cy="60" r="0.8"/>
+    <circle cx="1520" cy="35" r="0.9"/>
+    <circle cx="1770" cy="45" r="1"/>
+    <circle cx="1850" cy="20" r="0.8"/>
+    <circle cx="1900" cy="55" r="1.1"/>
+    <circle cx="350" cy="75" r="0.6"/>
+    <circle cx="480" cy="40" r="0.7"/>
+    <circle cx="850" cy="60" r="0.6"/>
+    <circle cx="1100" cy="70" r="0.7"/>
+    <circle cx="1700" cy="30" r="0.6"/>
+  </g>
+
+  <!-- ===== BIRDS ===== -->
+  <g opacity="0.1" stroke="#88888e" stroke-width="1.2" fill="none" stroke-linecap="round">
+    <path d="M440,140 Q445,135 450,140 Q455,135 460,140"/>
+    <path d="M470,130 Q474,126 478,130 Q482,126 486,130"/>
+    <path d="M455,150 Q459,146 463,150 Q467,146 471,150"/>
+    <path d="M1300,120 Q1305,115 1310,120 Q1315,115 1320,120"/>
+    <path d="M1325,110 Q1329,106 1333,110 Q1337,106 1341,110"/>
+    <path d="M1280,135 Q1284,131 1288,135 Q1292,131 1296,135"/>
+  </g>
+
+  <!-- ===== POWER LINES (across the sky) ===== -->
+  <g opacity="0.06" stroke="#88888e" stroke-width="0.8" fill="none">
+    <!-- Cable sag left to right -->
+    <path d="M0,200 Q480,220 960,205 Q1440,190 1920,210"/>
+    <path d="M0,208 Q480,228 960,213 Q1440,198 1920,218"/>
   </g>
 
   <!-- ===== LEFT CITY CLUSTER (x: 0 — 500) ===== -->
@@ -202,6 +270,43 @@
   <rect x="415" y="478" width="10" height="14" rx="1" fill="#ef7a21" opacity="0.3"/>
   <rect x="397" y="502" width="10" height="14" rx="1" fill="#ef7a21" opacity="0.2"/>
   <rect x="415" y="502" width="10" height="14" rx="1" fill="#c0c0c6" opacity="0.3"/>
+
+  <!-- Rooftop details — left buildings -->
+  <!-- Antenna on tall tower -->
+  <g opacity="0.25">
+    <line x1="40" y1="215" x2="40" y2="185" stroke="#6a6a6e" stroke-width="1.5"/>
+    <line x1="34" y1="195" x2="46" y2="195" stroke="#6a6a6e" stroke-width="1"/>
+    <line x1="36" y1="202" x2="44" y2="202" stroke="#6a6a6e" stroke-width="0.8"/>
+    <circle cx="40" cy="184" r="1.5" fill="#ef7a21" opacity="0.5"/>
+  </g>
+  <!-- Water tank on medium building -->
+  <g opacity="0.2">
+    <rect x="125" y="306" width="20" height="10" fill="#505052" rx="1"/>
+    <rect x="128" y="300" width="14" height="6" fill="#5e5e62" rx="1"/>
+    <line x1="130" y1="316" x2="130" y2="310" stroke="#505052" stroke-width="1"/>
+    <line x1="140" y1="316" x2="140" y2="310" stroke="#505052" stroke-width="1"/>
+  </g>
+  <!-- Satellite dish on church -->
+  <g opacity="0.15">
+    <path d="M270,378 Q276,370 280,378" stroke="#6a6a6e" stroke-width="1.2" fill="none"/>
+    <line x1="275" y1="378" x2="275" y2="384" stroke="#6a6a6e" stroke-width="0.8"/>
+  </g>
+  <!-- Chimney on house -->
+  <g opacity="0.2">
+    <rect x="355" y="435" width="8" height="12" fill="#505052"/>
+  </g>
+
+  <!-- Scaffolding on small building left -->
+  <g opacity="0.12" stroke="#6a6a6e" stroke-width="0.8">
+    <line x1="385" y1="460" x2="385" y2="550"/>
+    <line x1="440" y1="460" x2="440" y2="550"/>
+    <line x1="385" y1="480" x2="440" y2="480"/>
+    <line x1="385" y1="510" x2="440" y2="510"/>
+    <line x1="385" y1="540" x2="440" y2="540"/>
+    <!-- Diagonal braces -->
+    <line x1="385" y1="480" x2="440" y2="510"/>
+    <line x1="385" y1="510" x2="440" y2="540"/>
+  </g>
 
   <!-- Fading edge building left (transition to gap) -->
   <rect x="455" y="490" width="40" height="60" fill="#3e3e40" opacity="0.4" rx="2"/>
@@ -409,6 +514,82 @@
     <rect x="1908" y="418" width="9" height="12" rx="1" fill="#ef7a21" opacity="0.25"/>
     <rect x="1892" y="442" width="9" height="12" rx="1" fill="#ef7a21" opacity="0.25"/>
     <rect x="1908" y="442" width="9" height="12" rx="1" fill="#c0c0c6" opacity="0.3"/>
+  </g>
+
+  <!-- Rooftop details — right buildings -->
+  <!-- Antenna on glass tower -->
+  <g opacity="0.25">
+    <line x1="1560" y1="235" x2="1560" y2="195" stroke="#6a6a6e" stroke-width="1.5"/>
+    <line x1="1553" y1="208" x2="1567" y2="208" stroke="#6a6a6e" stroke-width="1"/>
+    <line x1="1555" y1="218" x2="1565" y2="218" stroke="#6a6a6e" stroke-width="0.8"/>
+    <circle cx="1560" cy="194" r="1.5" fill="#ef7a21" opacity="0.5"/>
+  </g>
+  <!-- Satellite dish on residential tower -->
+  <g opacity="0.15">
+    <path d="M1680,294 Q1686,286 1690,294" stroke="#6a6a6e" stroke-width="1.2" fill="none"/>
+    <line x1="1685" y1="294" x2="1685" y2="300" stroke="#6a6a6e" stroke-width="0.8"/>
+  </g>
+  <!-- Water tank on right edge tower -->
+  <g opacity="0.2">
+    <rect x="1825" y="268" width="18" height="10" fill="#505052" rx="1"/>
+    <rect x="1828" y="262" width="12" height="6" fill="#5e5e62" rx="1"/>
+    <line x1="1830" y1="278" x2="1830" y2="272" stroke="#505052" stroke-width="1"/>
+    <line x1="1838" y1="278" x2="1838" y2="272" stroke="#505052" stroke-width="1"/>
+  </g>
+  <!-- AC units on factory roof -->
+  <g opacity="0.12">
+    <rect x="1350" y="412" width="12" height="8" fill="#505052" rx="1"/>
+    <rect x="1370" y="412" width="12" height="8" fill="#505052" rx="1"/>
+    <rect x="1390" y="412" width="12" height="8" fill="#505052" rx="1"/>
+  </g>
+  <!-- Chimney on right house -->
+  <g opacity="0.2">
+    <rect x="1760" y="418" width="8" height="14" fill="#505052"/>
+  </g>
+
+  <!-- ===== TREES at ground level ===== -->
+  <g opacity="0.12">
+    <!-- Left side trees -->
+    <ellipse cx="260" cy="578" rx="14" ry="16" fill="#4a5550"/>
+    <rect x="258" y="594" width="4" height="8" fill="#505052"/>
+    <ellipse cx="310" cy="582" rx="11" ry="13" fill="#4a5550"/>
+    <rect x="308" y="595" width="4" height="7" fill="#505052"/>
+    <ellipse cx="470" cy="580" rx="12" ry="14" fill="#4a5550"/>
+    <rect x="468" y="594" width="4" height="8" fill="#505052"/>
+    <!-- Right side trees -->
+    <ellipse cx="1240" cy="580" rx="12" ry="14" fill="#4a5550"/>
+    <rect x="1238" y="594" width="4" height="8" fill="#505052"/>
+    <ellipse cx="1560" cy="578" rx="13" ry="15" fill="#4a5550"/>
+    <rect x="1558" y="593" width="4" height="9" fill="#505052"/>
+    <ellipse cx="1700" cy="582" rx="10" ry="12" fill="#4a5550"/>
+    <rect x="1698" y="594" width="4" height="7" fill="#505052"/>
+  </g>
+
+  <!-- ===== VEHICLES on road ===== -->
+  <g opacity="0.1">
+    <!-- Car left (driving right) -->
+    <rect x="550" y="606" width="24" height="10" rx="2" fill="#5e5e62"/>
+    <rect x="554" y="602" width="14" height="6" rx="1" fill="#5e5e62"/>
+    <circle cx="556" cy="618" r="2.5" fill="#505052"/>
+    <circle cx="570" cy="618" r="2.5" fill="#505052"/>
+    <rect x="573" y="608" width="3" height="2" rx="0.5" fill="#ef7a21" opacity="0.5"/>
+    <!-- Car center -->
+    <rect x="850" y="608" width="22" height="9" rx="2" fill="#5e5e62"/>
+    <rect x="854" y="604" width="12" height="5" rx="1" fill="#5e5e62"/>
+    <circle cx="856" cy="619" r="2.5" fill="#505052"/>
+    <circle cx="868" cy="619" r="2.5" fill="#505052"/>
+    <!-- Truck right -->
+    <rect x="1350" y="604" width="36" height="13" rx="2" fill="#505052"/>
+    <rect x="1376" y="600" width="12" height="8" rx="1" fill="#5e5e62"/>
+    <circle cx="1358" cy="619" r="3" fill="#454548"/>
+    <circle cx="1372" cy="619" r="3" fill="#454548"/>
+    <circle cx="1384" cy="619" r="3" fill="#454548"/>
+    <rect x="1348" y="608" width="3" height="2" rx="0.5" fill="#ef7a21" opacity="0.4"/>
+    <!-- Car far right -->
+    <rect x="1700" y="607" width="22" height="9" rx="2" fill="#5e5e62"/>
+    <rect x="1704" y="603" width="12" height="5" rx="1" fill="#5e5e62"/>
+    <circle cx="1706" cy="618" r="2.5" fill="#505052"/>
+    <circle cx="1718" cy="618" r="2.5" fill="#505052"/>
   </g>
 
   <!-- ===== STREET LAMPS ===== -->
