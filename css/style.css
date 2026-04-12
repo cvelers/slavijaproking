@@ -509,17 +509,8 @@ button { font-family: var(--font); cursor: pointer; }
 
 /* Placeholder pattern — will be replaced by real photo */
 .hero-bg--placeholder {
-  background: linear-gradient(155deg, #444444 0%, #3c3c3c 35%, #353535 100%);
-}
-
-.hero-bg--placeholder::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px);
-  background-size: 48px 48px;
+  background: url('../images/hero-city.svg') center bottom / cover no-repeat,
+              linear-gradient(155deg, #2e2822 0%, #3a3028 35%, #2e2822 100%);
 }
 
 /* Overlay for readability on top of bg image */
@@ -529,8 +520,8 @@ button { font-family: var(--font); cursor: pointer; }
   inset: 0;
   background: linear-gradient(
     155deg,
-    rgba(56, 56, 56, 0.65) 0%,
-    rgba(42, 42, 42, 0.8) 100%
+    rgba(46, 40, 34, 0.35) 0%,
+    rgba(36, 30, 24, 0.45) 100%
   );
 }
 
