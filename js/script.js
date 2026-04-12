@@ -278,4 +278,97 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ---------- PROJECT DETAIL MODAL ----------
+  const overlay = document.querySelector('.project-modal-overlay');
+  const modal = overlay ? overlay.querySelector('.project-modal') : null;
+
+  if (overlay && modal) {
+    const heroImg = modal.querySelector('.project-modal-hero img');
+    const titleEl = modal.querySelector('.project-modal-title');
+    const metaEl  = modal.querySelector('.project-modal-meta');
+    const descEl  = modal.querySelector('.project-modal-desc');
+    const galleryEl    = modal.querySelector('.project-modal-gallery');
+    const galleryLabel = modal.querySelector('.project-modal-gallery-title');
+
+    function openModal(card) {
+      const d = card.dataset;
+      heroImg.src = card.querySelector('.ref-card-img img').src;
+      heroImg.alt = d.title || '';
+      titleEl.textContent = d.title || '';
+
+      metaEl.innerHTML = '';
+      const labelLoc    = i18n.currentLang === 'en' ? 'Location' : 'Lokacija';
+      const labelClient = i18n.currentLang === 'en' ? 'Client'   : 'Investitor';
+      const labelPeriod = i18n.currentLang === 'en' ? 'Period'   : 'Period';
+      const labelArea   = i18n.currentLang === 'en' ? 'Area'     : 'Površina';
+      if (d.location) metaEl.innerHTML += '<span class="project-modal-tag"><strong>' + labelLoc + ':</strong> ' + d.location + '</span>';
+      if (d.client)   metaEl.innerHTML += '<span class="project-modal-tag"><strong>' + labelClient + ':</strong> ' + d.client + '</span>';
+      if (d.period)   metaEl.innerHTML += '<span class="project-modal-tag"><strong>' + labelPeriod + ':</strong> ' + d.period + '</span>';
+      if (d.area)     metaEl.innerHTML += '<span class="project-modal-tag"><strong>' + labelArea + ':</strong> ' + d.area + '</span>';
+
+      descEl.textContent = d.desc || '';
+
+      galleryEl.innerHTML = '';
+      if (d.gallery) {
+        const imgs = d.gallery.split(',');
+        imgs.forEach(src => {
+          const img = document.createElement('img');
+          img.src = src.trim();
+          img.alt = d.title || '';
+          img.loading = 'lazy';
+          img.addEventListener('click', () => openLightbox(img.src));
+          galleryEl.appendChild(img);
+        });
+        galleryLabel.style.display = '';
+      } else {
+        galleryLabel.style.display = 'none';
+      }
+
+      overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      overlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay) closeModal();
+    });
+
+    modal.querySelector('.project-modal-close').addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && lightbox && lightbox.classList.contains('is-open')) {
+        lightbox.classList.remove('is-open');
+      } else if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+
+    document.querySelectorAll('.ref-card[data-project]').forEach(card => {
+      card.addEventListener('click', e => {
+        if (e.target.closest('a')) return;
+        openModal(card);
+      });
+    });
+
+    // Lightbox
+    const lightbox    = document.querySelector('.project-lightbox');
+    const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
+
+    function openLightbox(src) {
+      if (!lightbox) return;
+      lightboxImg.src = src;
+      lightbox.classList.add('is-open');
+    }
+
+    if (lightbox) {
+      lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('is-open');
+      });
+    }
+  }
+
 });
