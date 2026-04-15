@@ -1,0 +1,81 @@
+/* ============================================================
+   HERO LIGHT VARIANT — "Warm Dusk" Proposal
+   ============================================================
+   Pairs with: hero-city-light.svg
+
+   Changes from current hero:
+   - Lighter, warmer background gradient (taupe/brown vs cold dark grey)
+   - Reduced overlay opacity for more SVG warmth to show through
+   - Slightly warmer badge + ghost button tints
+   - All text colors remain white for contrast on the warm-dark base
+
+   To test: swap .hero-bg--placeholder background-image to hero-city-light.svg
+   and apply the gradient + overlay changes below.
+   ============================================================ */
+
+/* --- Option A: Drop-in replacement (overwrite existing rules) --- */
+
+.hero {
+  /* Warmer dark background (fallback behind SVG) */
+  background: #5e5448;
+  color: var(--color-text-on-dark);
+}
+
+.hero-bg--placeholder {
+  background: url('../images/hero-city-light.svg') center bottom / cover no-repeat,
+              linear-gradient(155deg, #6a6058 0%, #7a7068 35%, #5e5448 100%);
+}
+
+/* Lighter overlay — lets the warm SVG glow breathe */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    155deg,
+    rgba(90, 80, 68, 0.2) 0%,
+    rgba(70, 62, 52, 0.3) 100%
+  );
+}
+
+/* Badge — warmer glass tint */
+.hero-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Ghost button — warmer glass */
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* Scroll indicator — slightly brighter to match lighter bg */
+.hero-scroll {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-scroll-line {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+}
+
+
+/* --- Option B: BEM modifier approach (add class="hero-bg--light" alongside hero-bg--placeholder) --- */
+/*
+.hero--light {
+  background: #5e5448;
+}
+
+.hero-bg--light {
+  background: url('../images/hero-city-light.svg') center bottom / cover no-repeat,
+              linear-gradient(155deg, #6a6058 0%, #7a7068 35%, #5e5448 100%);
+}
+
+.hero-bg--light::after {
+  background: linear-gradient(
+    155deg,
+    rgba(90, 80, 68, 0.2) 0%,
+    rgba(70, 62, 52, 0.3) 100%
+  );
+}
+*/
